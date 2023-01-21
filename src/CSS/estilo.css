@@ -1,0 +1,177 @@
+@charset "UTF-08";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300&family=Poppins:wght@100;300;500&family=Signika+Negative:wght@300&family=Titillium+Web:wght@200&display=swap');
+
+
+:root {
+    --cor1: #000033;
+    --cor2: #003566;
+    --cor3: #29cbe4;
+    --cor4: #b9b6b6;
+
+    --fonte-principal: 'Poppins', Verdana, sans-serif;
+}
+
+@media screen and (max-width:750px){
+    body div#descricao {
+        width: 100%;
+         border-radius: unset;
+    }
+    body .imagens {
+        margin-bottom: 20px;
+        width: 90%;
+    }
+
+    footer {
+        justify-content: center;
+    }
+
+    body footer h1 {
+        margin-left: unset;
+        margin-top: 500px
+    }
+
+}
+
+
+* {
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+}
+
+p, h1, h2 {
+    font-family: var(--fonte-principal);
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+/* Cabecalho */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-image: url(../Imagens/fechado.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.39);
+}
+
+div#descricao {
+    text-align: center;
+    width: 500px;
+    background: #f8f8f86d;
+    border: 1px solid var(--cor1);
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.312);
+    padding: 30px 40px;
+    border-radius: 20px;
+    color: black;
+}
+
+/* Corpo */
+
+main {
+    display: flex;
+    justify-content: center;
+    background: var(--cor4);
+}
+
+section {
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    background: #fff;
+    max-width: 1000px;
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.225);
+
+}
+
+section h1 {
+    color: black;
+    padding: 5px;
+    background: linear-gradient(to right, var(--cor3), #fff);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.exemplos {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagens {
+    margin-bottom: 10px;
+    margin-left: 20px ;
+    width: 400px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.397);
+}
+
+div.parallax {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border: 1px solid var(--cor1);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.397);
+}
+
+div#primeiro {
+    width: 100%;
+    height: 500px;
+    background-image: url(../Imagens/Transformacao-Digital-1.jpg);
+}
+
+div#segundo {
+    width: 100%;
+    height: 500px;
+    background-image: url(../Imagens/oculos.jpg);
+}
+
+aside {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center
+}
+
+aside > h2 {
+    width: 100%;
+    margin-bottom: 10px;
+    background: linear-gradient(to left, #fff,var(--cor3), var(--cor3), var(--cor3), #fff);
+}
+
+/* Rodapé */
+
+footer {
+    display: flex;
+    width: 100%;
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(../Imagens/INTELIGENCIA_ARTIFICIAL_SHUTTER.jpg);
+    align-items: center;
+}
+
+footer h1 {
+    color: white;
+    margin-left: 30px;
+}
